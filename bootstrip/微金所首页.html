@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>微金所</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+	<!--引入css-->
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<style type="text/css">
+
+	</style>
+  </head>
+  <body>
+   <!--通栏-->
+	<div class="header hidden-xs hidden-sm hidden-md">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-2">
+					<a href="#" class="glyphicon glyphicon-phone">手机微金所
+						<span class="glyphicon glyphicon-menu-down"></span>
+						
+					</a>
+					<img src="img/code.jpg" alt="" />
+				</div>
+				<div class="col-lg-5"><a href="#" class="glyphicon glyphicon-phone-alt">400-820-3521（服务电话）<span class="glyphicon glyphicon-time"></span>9:00-21:00（服务时间）</a></div>
+				<div class="col-lg-2"><a href="#">常见问题</a><a href="#">联系我们</a></div>
+				<div class="col-lg-3"><input type="button"  value="免费注册" class="btn btn-danger btn-xs" /><a href="#">登录</a></div>
+			</div>
+		</div>
+		
+	</div>
+   <!--导航栏-->
+   <nav class="navbar my-navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/timg.jpg"width="60px"/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">我要投资 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">我要理财</a></li>
+        <li><a href="#">我要借贷</a></li>
+        <li><a href="#">我要咨询</a></li>
+        <li><a href="#">项目介绍</a></li>
+        <li><a href="#">专家领航</a></li>
+       </ul>     
+     
+      <ul class="nav navbar-nav navbar-right ">
+        <li><a href="#" class="hidden-xs hidden-sm">注销</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle show" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心 <span class="caret hidden-md hidden-sm hidden-xs"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">修改信息</a></li>
+            <li><a href="#">我的好友</a></li>
+            <li><a href="#">浏览足迹</a></li>
+           
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <!--轮播图-->
+  <div class="banner">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <a href="#" class=" banner_a image_a hidden-xs">	
+      </a>
+      <!--专门为移动端设置轮播图组件-->
+      <a href="#" class="mobile_a hidden-lg hidden-sm hidden-md">
+      	<img src="img/slide_01_640x340.jpg" alt="...">
+      </a>
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+    <div class="item ">
+    	<a href="#" class="banner_a image_b hidden-xs">
+    		
+    	</a>
+      <!--专门为移动端设置轮播图组件-->
+      <a href="#" class="mobile_a hidden-lg hidden-sm hidden-md">
+      	<img src="img/slide_02_640x340.jpg" alt="...">
+      </a>
+      
+      <div class="carousel-caption">
+ 
+      </div>
+    </div>
+     <div class="item ">
+      <a href="#" class="banner_a image_c hidden-xs">
+      	
+      </a>
+      <!--专门为移动端设置轮播图组件-->
+      <a href="#" class="mobile_a hidden-lg hidden-sm hidden-md">
+      	<img src="img/slide_03_640x340.jpg" alt="...">
+      </a>
+      <div class="carousel-caption">
+  
+      </div>
+    </div>
+    <div class="item" >
+      <a href="#" class="banner_a image_d hidden-xs">
+      	
+      </a>
+      <!--专门为移动端设置轮播图组件-->
+      <a href="#" class="mobile_a hidden-lg hidden-sm hidden-md">
+      	<img src="img/slide_04_640x340.jpg" alt="...">
+      </a>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+ 
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	</div>
+  <!--信息栏-->
+  <div class="info hidden-xs">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-lg-4 col-md-6 col-sm-6">
+					  <div class="my-media">
+					  	<a href="#">
+						  	<div class="media-left">
+							    <div >
+							    	<span id=""  class="glyphicon glyphicon-lock">					    		
+							    	</span>
+							      <!--<img class="media-object" src="..." alt="...">-->
+							    </div>
+						  	</div>
+						  		<div class="media-body">					    
+						    	<h4 class="media-heading">支付交易保障</h4>
+						    		银联全程服务
+						  		</div>
+					    </a>
+					</div>
+  			</div>
+  			<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="my-media">
+						<a href="#">
+					  <div class="media-left">
+					    <div>
+					      <span  class="glyphicon glyphicon-eur"></span>
+					    </div>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">支付交易保障</h4>
+					    银联全程服务
+					  </div>
+						</a>
+					</div>
+					
+  			</div>
+  			<div class="col-lg-4 col-md-6 col-sm-6">
+  				<div class="my-media">
+  					<a href="">
+					  <div class="media-left">
+					    <div>
+					      <span class="glyphicon glyphicon-folder-close"></span>
+					    </div>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">支付交易保障</h4>
+					    银联全程服务
+					  </div>
+					  </a>
+					</div>
+  			</div>
+  			<div class="col-lg-4 col-md-6 col-sm-6">
+  				<div class="my-media">
+  					<a href="#">
+					  <div class="media-left">
+					    <div>
+					      <span class="glyphicon glyphicon-usd"></span>
+					    </div>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">支付交易保障</h4>
+					    银联全程服务
+					  </div>
+					  </a>
+					</div>
+  			</div>
+  			<div class="col-lg-4 col-md-6 col-sm-6">
+  				<div class="my-media">
+  					<a href="#">
+					  <div class="media-left">
+					    <div>
+					      <span class="glyphicon glyphicon-gbp"></span>
+					    </div>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">支付交易保障</h4>
+					    银联全程服务
+					  </div>
+					  </a>
+					</div>
+  			</div>
+  			<div class="col-lg-4 col-md-6 col-sm-6">
+  				<div class="my-media">
+  					<a href="#">
+					  <div class="media-left">
+					    <div>
+					      <span class="glyphicon glyphicon-piggy-bank"></span>
+					    </div>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">支付交易保障</h4>
+					    银联全程服务
+					  </div>
+					  </a>
+					</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  <!--公告栏-->
+  <div class="moreinfo">
+  	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-lg-12">
+  				现有273人排队，累计交易成功23568次
+  				<a href="#">
+  					立即预约
+  				</a>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+	<!--标签栏-->
+  <div>
+
+  <!-- Nav tabs -->
+	<div class="my-tab-header">
+	  <ul class="nav my-nav-tabs" role="tablist">
+	    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">特别推荐</a></li>
+	    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">微投资</a></li>
+	    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">理财在线</a></li>
+	    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">英航政策</a></li>
+	  </ul>
+	</div>
+  <!-- Tab panes -->
+	<div class="my-tab-content">
+	  <div class="tab-content">
+	    <div role="tabpanel" class="tab-pane active" id="home">
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    			<a href="#">
+		    			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 box">
+		    				<div class="right">
+		    					<p>年利率</p>
+		    					<p>%8</p>
+		    				</div>
+		    				<div class="left">
+		    					<div class="header">
+		    						<p>新手优惠</p>
+		    					</div>
+		    					<div>
+		    						<div class="col-xs-6">
+		    						<p>起投金额</p>
+		    						<p>9.98万</p>
+		    					</div>
+		    					<div class="col-xs-6 right-align">
+		    					<p>已投人数</p>
+		    					<p>568人</p>
+		    					</div>
+		    					<div class="col-xs-6">
+		    						<p>借款期限</p>
+		    						<p>10天</p>
+		    					</div>
+		    					<div class="col-xs-6 right-align">
+		    						<p>已投金额</p>
+		    						<p>60万</p>
+		    					</div>
+		    					</div>
+		    					
+		    				</div>
+		    			</div>
+	    			</a>
+	    			<a href="#">
+		    			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 box">
+		    				<div class="right">
+		    					<p>年利率</p>
+		    					<p>%8</p>
+		    				</div>
+		    				<div class="left">
+		    					<div class="header">
+		    						<p>新手优惠</p>
+		    					</div>
+		    					<div>
+		    						<div class="col-xs-6">
+		    						<p>起投金额</p>
+		    						<p>9.98万</p>
+		    					</div>
+		    					<div class="col-xs-6 right-align">
+		    					<p>已投人数</p>
+		    					<p>568人</p>
+		    					</div>
+		    					<div class="col-xs-6">
+		    						<p>借款期限</p>
+		    						<p>10天</p>
+		    					</div>
+		    					<div class="col-xs-6 right-align">
+		    						<p>已投金额</p>
+		    						<p>60万</p>
+		    					</div>
+		    					</div>
+		    					
+		    				</div>
+		    			</div>
+	    			</a>
+	    			<a href="#">
+		    			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 box">
+		    				<div class="right">
+		    					<p>年利率</p>
+		    					<p>%8</p>
+		    				</div>
+		    				<div class="left">
+		    					<div class="header">
+		    						<p>新手优惠</p>
+		    					</div>
+		    					<div>
+		    						<div class="col-xs-6">
+		    						<p>起投金额</p>
+		    						<p>9.98万</p>
+		    					</div>
+		    					<div class="col-xs-6 right-align">
+		    					<p>已投人数</p>
+		    					<p>568人</p>
+		    					</div>
+		    					<div class="col-xs-6">
+		    						<p>借款期限</p>
+		    						<p>10天</p>
+		    					</div>
+		    					<div class="col-xs-6 right-align">
+		    						<p>已投金额</p>
+		    						<p>60万</p>
+		    					</div>
+		    					</div>
+		    					
+		    				</div>
+		    			</div>
+	    			</a>
+	    			<a href="#">
+		    			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 box">
+		    				<div class="right">
+		    					<p>年利率</p>
+		    					<p>%8</p>
+		    				</div>
+		    				<div class="left">
+		    					<div class="header">
+		    						<p>新手优惠</p>
+		    					</div>
+		    					<div>
+		    						<div class="col-xs-6">
+		    						<p>起投金额</p>
+		    						<p>9.98万</p>
+		    					</div>
+		    					<div class="col-xs-6 right-align">
+		    					<p>已投人数</p>
+		    					<p>568人</p>
+		    					</div>
+		    					<div class="col-xs-6">
+		    						<p>借款期限</p>
+		    						<p>10天</p>
+		    					</div>
+		    					<div class="col-xs-6 right-align">
+		    						<p>已投金额</p>
+		    						<p>60万</p>
+		    					</div>
+		    					</div>
+		    					
+		    				</div>
+		    			</div>
+	    			</a>
+	    			
+	    		</div>
+	    	</div>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="profile">
+	    	好
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="messages">世</div>
+	    <div role="tabpanel" class="tab-pane" id="settings">界</div>
+	  </div>
+	</div>	
+ </div>
+	
+	<!--新闻栏-->
+	<div class="news">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-2"><h3>最新热点</h3></div>
+				
+				<div class="col-lg-2">
+					 <!-- Nav tabs -->
+				  <ul class="nav news-nav-tabs" role="tablist">
+				  	<span class="line hidden-md hidden-sm hidden-xs"></span>
+				    <li role="presentation" class="active"><a href="#news-01" aria-controls="home" role="tab" data-toggle="tab" class="glyphicon glyphicon-road"></a></li>
+				    <li role="presentation"><a href="#news-02" aria-controls="profile" role="tab" data-toggle="tab" class="glyphicon glyphicon-time"></a></li>
+				    <li role="presentation"><a href="#news-03" aria-controls="messages" role="tab" data-toggle="tab" class="glyphicon glyphicon-flag"></a></li>
+				    <li role="presentation"><a href="#news-04" aria-controls="settings" role="tab" data-toggle="tab" class="glyphicon glyphicon-plane"></a></li>
+				  	
+				  </ul>
+
+				</div>
+				<div class="col-lg-6">
+					   <!-- Tab panes -->
+				  <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="news-01">
+				    	<ul class="aa">
+				    		<li><a href="#">一周公告--利息净长率全国最高——2018.03.26</a></li>
+				    		<li><a href="#">一周公告--利息净长率全国最高——2018.03.26</a></li>
+				    		<li><a href="#">一周公告--利息净长率全国最高——2018.03.26</a></li>
+				    		<li><a href="#">一周公告--利息净长率全国最高——2018.03.26</a></li>
+				    		<li><a href="#">一周公告--利息净长率全国最高——2018.03.26</a></li>
+				    		<li><a href="#">一周公告--利息净长率全国最高——2018.03.26</a></li>
+				    		<li><a href="#">一周公告--利息净长率全国最高——2018.03.26</a></li>
+				    		<li><a href="#">一周公告--利息净长率全国最高——2018.03.26</a></li>
+				    	</ul>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="news-02">2</div>
+				    <div role="tabpanel" class="tab-pane" id="news-03">3</div>
+				    <div role="tabpanel" class="tab-pane" id="news-04">4</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+ <!--底部栏-->
+  <div class="footer">
+  	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-lg-12">
+  				<h4>我和他们都有合作</h4>
+  				<ul>
+  					<li><a href="#" class="glyphicon glyphicon-floppy-disk"></a></li>
+  					<li><a href="#" class="glyphicon glyphicon-cutlery"></a></li>
+  					<li><a href="#" class="glyphicon glyphicon-sound-stereo"></a></li>
+  					<li><a href="#" class="glyphicon glyphicon-cloud-upload"></a></li>
+  					<li><a href="#" class="glyphicon glyphicon-queen"></a></li>
+  					<li><a href="#" class="glyphicon glyphicon-apple"></a></li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  
+  
+  </body>
+</html>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>

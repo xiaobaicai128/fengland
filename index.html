@@ -1,1 +1,117 @@
-<h1>lalaal</h1>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Template • TodoMVC</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/index.css">
+		<!-- CSS overrides - remove if you don't need it -->
+		<link rel="stylesheet" href="css/app.css">
+		<style type="text/css">
+			.colorful{
+				color:red;
+			}
+			.color-completed{
+				color: green;
+			}
+		</style>
+	</head>
+	<body ng-app='Todo'>
+		<section class="todoapp" ng-controller='TodoController'>
+			<header class="header">
+				<h1>todos</h1>
+				<form ng-submit='submit()'>
+					<input class="new-todo" placeholder="What needs to be done?" autofocus ng-model='text'>
+				</form>
+			</header>
+			<section class="main">
+				<input class="toggle-all" type="checkbox">
+				<label for="toggle-all">Mark all as complete</label>
+				<ul class="todo-list">
+					<li  ng-repeat='(key,todo) in todos'>
+						<div class="view">
+							<input class="toggle" type="checkbox" ng-checked='todo.flag' ng-click='move(key)' >
+							<label>{{todo.text}}</label>
+							<button class="destroy" ng-click='delete(key,todos)'></button>
+						</div>
+						<input class="edit" value="Create a TodoMVC template">
+					</li>
+					
+					<h3>Completed</h3>
+					
+					<li ng-repeat='(key,haveDone) in haveDones' class="completed">
+						<div class="view">
+							<input class="toggle" type="checkbox" ng-click='back(key)' ng-checked='haveDone.flag'>
+							<label>{{haveDone.text}}</label>
+							<button class="destroy" ng-click='delete(key,haveDones)'></button>
+						</div>
+						<input class="edit" value="Rule the web">
+					</li>
+				</ul>
+			</section>
+			<footer class="footer">
+				<span class="todo-count"><strong class='colorful'>{{todos.length}}</strong> item left</span>
+				<button class="clear-completed" ng-click='deleteAll(haveDones)' ><strong class="color-completed">Clear completed</strong></button>
+			</footer>
+		</section>
+		<footer class="info">
+			<p>Double-click to edit a todo</p>
+			<p>Template by <a href="http://sindresorhus.com">Sindre Sorhus</a></p>
+			<p>Created by <a href="http://todomvc.com">you</a></p>
+			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+		</footer>
+		<script src="js/angular.min.js"></script>
+		
+		<script type="text/javascript">
+			var Todo = angular.module('Todo',[]);
+			Todo.controller('TodoController',['$scope',function($scope){
+				//待办事项
+				$scope.todos = [];
+				
+				//回车事件
+				$scope.submit = function(){
+					$scope.todos.push({text:$scope.text,flag:false});
+					$scope.text = '';
+					
+				}
+				
+				//已完成事项
+				$scope.haveDones = [];
+				//点击待办事项的对号使其移到已完成事项中
+				$scope.move = function(key){
+					var haveDone = $scope.todos.splice(key,1)[0];
+					$scope.haveDones.push(haveDone);
+					haveDone.flag = true;
+				}
+				
+				//点击已完成事项前面的对号，使其回到未完成事项中
+				$scope.back = function(key){
+					var stillTodo = $scope.haveDones.splice(key,1)[0];
+					$scope.todos.push(stillTodo);
+					stillTodo.flag = false;
+				}
+				
+				//点击未完成、已完成事项的叉号清除事件
+				$scope.delete = function(key,events){
+					events.splice(key,1);
+				}
+				
+				//点击 Clear completed 全部清除已完成事项
+				$scope.deleteAll = function(event){
+					event.splice(0,event.length);
+				}
+				
+				//
+				
+				
+				//splice返回的是一个数组
+			}])
+			
+			
+			
+		</script>
+		
+		
+	</body>
+</html>
